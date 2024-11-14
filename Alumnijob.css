@@ -1,0 +1,205 @@
+/* Overall Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for Job Opportunities */
+  .job-opportunities-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  /* Search Section */
+  .search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: #0073e6;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.2);
+  }
+  
+  /* Add Job Button */
+  .add-job-button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-job-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Job Listings */
+  .job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .job-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-title {
+    font-size: 1.4em;
+    color: #0073e6;
+    margin-bottom: 8px;
+  }
+  
+  .company-name,
+  .job-location,
+  .job-description,
+  .job-meta {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .job-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+  }
+  
+  .view-details-button {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+  }
+  
+  .view-details-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* No Jobs Text */
+  .no-jobs {
+    text-align: center;
+    color: #777;
+  }
+  
+  /* Modal Overlay for Add Job Form */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  /* Add Job Form Modal */
+  .add-job-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 11;
+  }
+  
+  .add-job-form h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .add-job-form input,
+  .add-job-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-job-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Form Buttons */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #005bb5;
+  }
+  
+  .cancel-button {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #ccc;
+  }
+  

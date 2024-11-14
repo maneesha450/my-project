@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .alumni-search-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .search-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .search-bar {
+    width: 80%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s;
+  }
+  
+  .search-bar:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .alumni-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .alumni-table th, .alumni-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .alumni-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .alumni-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .alumni-table tr:hover {
+    background-color: #f1f9f4;
+  }
+  
+  .alumni-table td {
+    color: #333;
+    font-size: 0.9em;
+  }
+  
+  .alumni-table tr td:first-child {
+    font-weight: 500;
+  }
+  
+  .alumni-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .alumni-table th,
+  .alumni-table td {
+    border-right: 1px solid #ddd;
+  }
+  
+  .alumni-table th:last-child,
+  .alumni-table td:last-child {
+    border-right: none;
+  }
+  
